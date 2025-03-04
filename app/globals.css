@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: rgb(16, 12, 12);
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(./public/Font/Manrope-Regular.otf)format('opentype');
+}
+::-webkit-scrollbar{
+  display: none;
+}
