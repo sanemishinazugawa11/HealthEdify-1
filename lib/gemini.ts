@@ -1,5 +1,4 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-const GEMINI_API_KEY = "AIzaSyCt_bMHsw_3WfLZm5u6eYbLzPvNRM4JxYU";
 
 export const getDescription = async (prompt: string): Promise<string> => {
   try {
