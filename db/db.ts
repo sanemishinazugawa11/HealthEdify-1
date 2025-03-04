@@ -6,7 +6,7 @@ const connect = async (): Promise<void> => {
         return;
       }
         try{
-            await mongoose.connect('mongodb+srv://ksbhuvi2004:0HWE4DwK4HxrXi5K@cluster0.rfv5q.mongodb.net/healthEdify')
+            await mongoose.connect('your_mongo-url')
             console.log('Connected to the database')
         }
         catch(e){
