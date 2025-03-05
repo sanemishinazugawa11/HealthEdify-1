@@ -40,7 +40,7 @@ function Page() {
 
   return (
     <section className="max-w-screen h-screen flex">
-      {/* Sidebar for History */}
+    
       <aside className="w-1/4 bg-neutral-950 text-white px-5 py-3 overflow-y-hidden overflow-x-hidden border-r-[0.5px] border-neutral-800">
         <motion.h2
           initial={{ y: -100 }}
@@ -87,9 +87,8 @@ function Page() {
         </div>
       </aside>
 
-      {/* Chat Interface */}
       <section className="w-3/4 flex flex-col bg-neutral-950 h-full">
-        {/* Header */}
+    
         <div className="nav w-full px-6 bg-neutral-950 border-b-[0.5px] border-neutral-800 h-[10vh] flex justify-between items-center">
           <button
             onClick={() => router.push("/home")}
@@ -144,14 +143,14 @@ function Page() {
                 // console.log(selectedAnswers);
                 if (answers && answers.length > 0) {
                   const correctAnswers = answers
-                    .filter((item) => item?.key) // Filters out undefined or missing keys
+                    .filter((item) => item?.key)
                     .map((item) => item.key.replace(")", ""))
                     .toLocaleString();
 
                   // console.log(correctAnswers);
 
                   const score = selectedAnswers
-                    .filter((item) => item) // Filter out undefined items
+                    .filter((item) => item)
                     .map((item) => item.replace(")", ""));
 
                   // console.log(score.toLocaleString());
